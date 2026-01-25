@@ -53,13 +53,6 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground">
             <a 
-              href="mailto:hello@notenest.com" 
-              className="flex items-center gap-2 hover:text-foreground transition-colors"
-            >
-              <Mail className="w-4 h-4" />
-              hello@notenest.com
-            </a>
-            <a 
               href="mailto:notenest.app1@gmail.com" 
               className="flex items-center gap-2 hover:text-foreground transition-colors"
             >
