@@ -139,8 +139,8 @@ const GetApp = () => {
             <motion.div className="space-y-4 pt-2" variants={itemVariants}>
               <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
                 <a
-                  href="/notenest.apk"
-                  download
+                  href="https://notenest-storage-bucket.s3.eu-west-1.amazonaws.com/NoteNestExpo.apk"
+                  download="NoteNestExpo.apk"
                   className="btn-primary inline-flex items-center justify-center gap-2 group text-base"
                 >
                   <Download className="w-5 h-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -159,7 +159,7 @@ const GetApp = () => {
 
               <div className="flex items-center gap-2 text-xs text-muted-foreground px-1">
                 <Info className="w-3.5 h-3.5" />
-                <span>Version 1.0.0 (Beta) | File: APK</span>
+                <span>Version 1.0.0 (Beta) | Size: ~124 MB | File: APK</span>
               </div>
             </motion.div>
 
