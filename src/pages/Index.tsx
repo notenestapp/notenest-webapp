@@ -6,6 +6,7 @@ import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
 import Features from "@/components/Features";
 import Benefits from "@/components/Benefits";
+import GetApp from "@/components/GetApp";
 import Team from "@/components/Team";
 import Waitlist from "@/components/Waitlist";
 import Footer from "@/components/Footer";
@@ -33,6 +34,7 @@ const Index = () => {
             <Solution />
             <Features />
             <Benefits />
+            <GetApp />
             <Team />
             <Waitlist />
           </main>

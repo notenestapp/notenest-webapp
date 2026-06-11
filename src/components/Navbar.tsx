@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -19,6 +23,7 @@ const Navbar = () => {
     { href: "#features", label: "Features" },
     { href: "#benefits", label: "Benefits" },
     { href: "#team", label: "The Team" },
+    { href: "#download", label: "Get App" },
   ];
 
   return (
@@ -36,7 +41,7 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -46,18 +51,44 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
+            
+            {/* Theme Toggle Button (Desktop) */}
+            {mounted && (
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="p-2.5 rounded-full border border-border/50 hover:bg-muted text-muted-foreground hover:text-foreground transition-all duration-300 flex items-center justify-center hover:scale-105 active:scale-95"
+                aria-label="Toggle Theme"
+              >
+                {theme === "dark" ? <Sun size={18} className="text-yellow-400" /> : <Moon size={18} />}
+              </button>
+            )}
+
             <a href="#waitlist" className="btn-primary text-sm py-3 px-6">
               Join the Waitlist
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-foreground p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Actions Container */}
+          <div className="flex items-center gap-3 md:hidden">
+            {/* Theme Toggle Button (Mobile) */}
+            {mounted && (
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="p-2.5 rounded-full border border-border/50 hover:bg-muted text-muted-foreground hover:text-foreground transition-all duration-300 flex items-center justify-center active:scale-95"
+                aria-label="Toggle Theme"
+              >
+                {theme === "dark" ? <Sun size={18} className="text-yellow-400" /> : <Moon size={18} />}
+              </button>
+            )}
+
+            {/* Mobile Menu Button */}
+            <button
+              className="text-foreground p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

@@ -37,7 +37,7 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
           muted 
           playsInline
           onEnded={handleVideoEnd}
-          className="w-full h-ful object-fill min-w-full min-h-full"
+          className="w-full h-full object-fill min-w-full min-h-full"
         >
           <source src={preloaderVideo} type="video/mp4" />
         </video>

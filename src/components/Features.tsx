@@ -43,7 +43,7 @@ const Features = () => {
       icon: Bot,
       title: "Instant AI Chat Tutor",
       description: "Available 24/7 to answer your questions, break down complex topics, and guide your learning journey.",
-      color: "accent",
+      color: "sage",
     },
   ];
 
