@@ -17,10 +17,7 @@ const Contact = () => {
 
   // Initialize EmailJS on component mount
   useEffect(() => {
-    const initialized = initEmailJS();
-    if (!initialized) {
-      setEmailError("Email service not configured. Please check your environment variables.");
-    }
+    initEmailJS();
   }, []);
 
   const validateEmail = (email: string) => {
@@ -33,16 +30,26 @@ const Contact = () => {
     
     if (!email || !firstName || !lastName || !message || status === "loading") {
       setEmailError("Please fill in all fields");
+      setStatus("error");
       return;
     }
 
     if (!validateEmail(email)) {
       setEmailError("Please enter a valid email address");
+      setStatus("error");
       return;
     }
 
     if (message.trim().length < 10) {
       setEmailError("Message must be at least 10 characters long");
+      setStatus("error");
+      return;
+    }
+
+    const initialized = initEmailJS();
+    if (!initialized) {
+      setEmailError("Email service not configured. Please check your environment variables.");
+      setStatus("error");
       return;
     }
 
@@ -162,10 +169,10 @@ const Contact = () => {
               )}
             </button>
             
-            {(status === "error" || emailError) && (
+            {status === "error" && emailError && (
               <div className="flex items-center justify-center gap-2 text-destructive text-sm pt-2">
                 <AlertCircle className="w-4 h-4" />
-                {emailError || "Something went wrong. Try again in a moment."}
+                {emailError}
               </div>
             )}
           </form>
