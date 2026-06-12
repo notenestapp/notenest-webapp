@@ -3,11 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { Download, Smartphone, ShieldCheck, HelpCircle, ChevronDown, Check, Settings, Info } from "lucide-react";
 import androidMockup from "@/assets/android_mockup.png";
+import WhatsAppModal from "@/components/WhatsAppModal";
 
 const GetApp = () => {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, margin: "-100px" });
   const [showInstructions, setShowInstructions] = useState(false);
+  const [showWhatsAppModal, setShowWhatsAppModal] = useState(false);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -60,6 +62,7 @@ const GetApp = () => {
   ];
 
   return (
+    <>
     <section id="download" className="py-24 bg-card/30 relative overflow-hidden" ref={containerRef}>
       {/* Soft Glow Background */}
       <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-25 blur-3xl pointer-events-none"
@@ -141,6 +144,7 @@ const GetApp = () => {
                 <a
                   href="https://notenest-storage-bucket.s3.eu-west-1.amazonaws.com/NoteNestExpo.apk"
                   download="NoteNestExpo.apk"
+                  onClick={() => setShowWhatsAppModal(true)}
                   className="btn-primary inline-flex items-center justify-center gap-2 group text-base"
                 >
                   <Download className="w-5 h-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -201,6 +205,12 @@ const GetApp = () => {
         </div>
       </div>
     </section>
+
+    <WhatsAppModal 
+      isOpen={showWhatsAppModal} 
+      onOpenChange={setShowWhatsAppModal} 
+    />
+    </>
   );
 };
 

@@ -63,8 +63,8 @@ const Navbar = () => {
               </button>
             )}
 
-            <a href="#waitlist" className="btn-primary text-sm py-3 px-6">
-              Join the Waitlist
+            <a href="#download" className="btn-primary text-sm py-3 px-6">
+              Get Android App
             </a>
           </div>
 
@@ -106,11 +106,11 @@ const Navbar = () => {
                 </a>
               ))}
               <a 
-                href="#waitlist" 
+                href="#download" 
                 className="btn-primary text-center mt-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Join the Waitlist
+                Get Android App
               </a>
             </div>
           </div>

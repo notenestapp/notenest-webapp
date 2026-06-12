@@ -8,7 +8,7 @@ import Features from "@/components/Features";
 import Benefits from "@/components/Benefits";
 import GetApp from "@/components/GetApp";
 import Team from "@/components/Team";
-import Waitlist from "@/components/Waitlist";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
 
@@ -36,7 +36,7 @@ const Index = () => {
             <Benefits />
             <GetApp />
             <Team />
-            <Waitlist />
+            <Contact />
           </main>
           <Footer />
           <MobileCTA />

@@ -95,11 +95,11 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4"
               variants={itemVariants}
             >
-              <a href="#waitlist" className="btn-primary">
-                Join the Waitlist
+              <a href="#download" className="btn-primary">
+                Get Android App
               </a>
               <p className="text-sm text-muted-foreground self-center">
-                Be among the first to know.
+                Download APK directly for Android.
               </p>
             </motion.div>
           </motion.div>
