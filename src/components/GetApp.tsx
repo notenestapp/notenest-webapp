@@ -144,7 +144,14 @@ const GetApp = () => {
                 <a
                   href="https://notenest-storage-bucket.s3.eu-west-1.amazonaws.com/NoteNestExpo.apk"
                   download="NoteNestExpo.apk"
-                  onClick={() => setShowWhatsAppModal(true)}
+                  onClick={() => {
+                    fetch("https://notenest-backend.duckdns.org/api/downloads/track", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({ platform: "android" })
+                    }).catch(err => console.error("Error tracking download:", err));
+                    setShowWhatsAppModal(true);
+                  }}
                   className="btn-primary inline-flex items-center justify-center gap-2 group text-base"
                 >
                   <Download className="w-5 h-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
