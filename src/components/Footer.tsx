@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo-tagline.png";
 
 const Footer = () => {
@@ -50,8 +51,8 @@ const Footer = () => {
             <img src={logo} alt="NoteNest" className="h-50 w-auto" />
           </div>
 
-          {/* Contact */}
-          <div className="flex flex-col items-center gap-2 text-sm text-muted-foreground">
+          {/* Contact & Legal */}
+          <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground">
             <a 
               href="mailto:notenest.app1@gmail.com" 
               className="flex items-center gap-2 hover:text-foreground transition-colors"
@@ -59,6 +60,10 @@ const Footer = () => {
               <Mail className="w-4 h-4" />
               notenest.app1@gmail.com
             </a>
+            <div className="flex items-center gap-4 mt-2">
+              <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
+            </div>
           </div>
 
           {/* Social Links */}
