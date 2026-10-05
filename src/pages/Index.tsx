@@ -43,7 +43,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
                 href="https://console.mynotenest.app" 
-                className="bg-notenest-blue text-white font-bold text-lg py-4 px-10 rounded-full shadow-[0_6px_0_rgb(29,78,216)] hover:shadow-[0_2px_0_rgb(29,78,216)] hover:translate-y-[4px] transition-all w-full sm:w-auto text-center"
+                className="bg-notenest-blue text-white font-bold text-base md:text-lg py-3 px-8 md:py-4 md:px-10 rounded-full shadow-[0_6px_0_rgb(29,78,216)] hover:shadow-[0_2px_0_rgb(29,78,216)] hover:translate-y-[4px] transition-all w-full sm:w-auto text-center"
               >
                 Start Your Journey
               </a>
@@ -106,7 +106,8 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-24 px-12 md:px-16 bg-notenest-blue text-white overflow-hidden relative">
+        {/* Gamification Section */}
+        <section className="py-24 px-8 md:px-12 bg-notenest-blue text-white overflow-hidden relative">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
             <div className="flex-1">
               <h2 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
@@ -158,7 +159,7 @@ export default function Index() {
         </section>
 
         {/* Social / Challenge Section */}
-        <section className="py-24 px-12 md:px-16 bg-white dark:bg-gray-900">
+        <section className="py-24 px-8 md:px-12 bg-white dark:bg-gray-900">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6">Study with Friends</h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 font-medium max-w-2xl mx-auto mb-16">
@@ -174,7 +175,7 @@ export default function Index() {
                 </p>
                 <a 
                   href="https://console.mynotenest.app" 
-                  className="inline-block bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold text-lg py-4 px-10 rounded-full shadow-[0_6px_0_rgb(31,41,55)] dark:shadow-[0_6px_0_rgb(209,213,219)] hover:shadow-[0_2px_0_rgb(31,41,55)] dark:hover:shadow-[0_2px_0_rgb(209,213,219)] hover:translate-y-[4px] transition-all"
+                  className="inline-block bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold text-base md:text-lg py-3 px-8 md:py-4 md:px-10 rounded-full shadow-[0_6px_0_rgb(31,41,55)] dark:shadow-[0_6px_0_rgb(209,213,219)] hover:shadow-[0_2px_0_rgb(31,41,55)] dark:hover:shadow-[0_2px_0_rgb(209,213,219)] hover:translate-y-[4px] transition-all"
                 >
                   Create a Challenge
                 </a>
@@ -194,7 +195,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a 
                 href="#" 
-                className="bg-white text-gray-900 font-bold text-xl py-4 px-12 rounded-full shadow-[0_6px_0_rgb(209,213,219)] hover:shadow-[0_2px_0_rgb(209,213,219)] hover:translate-y-[4px] transition-all flex items-center justify-center gap-3"
+                className="bg-white text-gray-900 font-bold text-base md:text-xl py-3 px-8 md:py-4 md:px-12 rounded-full shadow-[0_6px_0_rgb(209,213,219)] hover:shadow-[0_2px_0_rgb(209,213,219)] hover:translate-y-[4px] transition-all flex items-center justify-center gap-3"
               >
                 <Download className="w-6 h-6" /> Download Android App
               </a>

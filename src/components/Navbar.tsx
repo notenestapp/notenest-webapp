@@ -25,17 +25,9 @@ export default function Navbar() {
           )}
         </a>
         <div className="flex items-center gap-4">
-          {mounted && (
-            <button
-              onClick={() => setTheme(isDark ? "light" : "dark")}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-            >
-              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
-          )}
           <a 
             href="https://console.mynotenest.app" 
-            className="bg-notenest-green hover:bg-emerald-600 text-white font-bold py-3 px-6 rounded-full shadow-[0_4px_0_rgb(4,120,87)] hover:shadow-[0_2px_0_rgb(4,120,87)] hover:translate-y-[2px] transition-all flex items-center gap-2"
+            className="bg-notenest-green hover:bg-emerald-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-full shadow-[0_4px_0_rgb(4,120,87)] hover:shadow-[0_2px_0_rgb(4,120,87)] hover:translate-y-[2px] transition-all flex items-center gap-2 text-sm md:text-base"
           >
             Get Started <ArrowRight className="w-4 h-4" />
           </a>
