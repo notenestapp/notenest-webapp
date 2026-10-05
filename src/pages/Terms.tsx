@@ -46,7 +46,7 @@ const Terms = () => {
           <p>You retain ownership of the files, images, and text you upload to NoteNest. By uploading content, you grant NoteNest a non-exclusive license to store, process, and transmit this content to our cloud storage (AWS S3) and AI partners for the sole purpose of providing the service to you.</p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">7. Subscription and Payments</h2>
-          <p>NoteNest offers one-time credit purchases and recurring subscriptions via our payment partners (Paystack and Flutterwave). All payments are subject to the terms of these third-party processors. NoteNest does not store your raw credit card information. Fees are non-refundable except as required by law.</p>
+          <p>NoteNest offers one-time credit purchases and recurring subscriptions via our payment partners (such as Flutterwave). All payments are subject to the terms of these third-party processors. NoteNest does not store your raw credit card information. Fees are non-refundable except as required by law.</p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">8. Intellectual Property</h2>
           <p>The NoteNest application, website, branding, and original content are the exclusive property of NoteNest and its licensors. You may not copy, modify, or distribute our proprietary software or designs without explicit permission.</p>
