@@ -16,7 +16,7 @@ const Terms = () => {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <Navbar />
-      <main className="flex-1 container max-w-4xl mx-auto px-4 py-12 mt-20">
+      <main className="flex-1 container max-w-4xl mx-auto px-8 md:px-12 py-12 mt-20">
         <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
         <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground">
           <p className="font-semibold text-foreground">Last updated: July 2026</p>

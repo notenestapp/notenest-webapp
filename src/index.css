@@ -6,46 +6,45 @@
 
 @layer base {
   :root {
-    /* NoteNest Green Palette - Light Theme */
+    /* NoteNest Gamified Palette - Light Theme */
     --background: 0 0% 100%;
-    --foreground: 60 20% 8%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 60 20% 8%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 60 20% 8%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 79 70% 36%;
+    --primary: 135.2 59% 49.2%; /* Green */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 67 40% 32%;
+    --secondary: 217.2 91.2% 59.8%; /* Blue */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 60 12% 94%;
-    --muted-foreground: 60 10% 40%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 79 60% 90%;
-    --accent-foreground: 60 20% 8%;
+    --accent: 43.3 96.4% 56.3%; /* Yellow */
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 60 12% 88%;
-    --input: 60 12% 88%;
-    --ring: 79 70% 36%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 135.2 59% 49.2%;
 
     --radius: 0.75rem;
 
     /* Custom NoteNest tokens - Light Theme */
-    --olive: 60 15% 96%;
-    --moss: 67 40% 32%;
-    --lime: 79 70% 36%;
-    --sage: 77 25% 42%;
+    --notenest-green: 135.2 59% 49.2%;
+    --notenest-blue: 217.2 91.2% 59.8%;
+    --notenest-yellow: 43.3 96.4% 56.3%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(79, 70%, 40%) 0%, hsl(67, 45%, 32%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(60, 15% , 96%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(79, 70%, 53%, 0.12) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(160.1, 84.1%, 45%) 0%, hsl(160.1, 84.1%, 35%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(210, 40%, 96.1%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(160.1, 84.1%, 39.4%, 0.12) 0%, transparent 70%);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -58,44 +57,43 @@
   }
 
   .dark {
-    /* NoteNest Green Palette - Dark Theme */
-    --background: 60 20% 8%;
-    --foreground: 0 0% 100%;
+    /* NoteNest Gamified Palette - Dark Theme */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 60 16% 12%;
-    --card-foreground: 0 0% 100%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 60 16% 12%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 79 70% 53%;
-    --primary-foreground: 60 20% 8%;
+    --primary: 135.2 59% 49.2%; /* Green */
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 67 60% 40%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 217.2 91.2% 59.8%; /* Blue */
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 67 25% 35%;
-    --muted-foreground: 67 15% 70%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 77 40% 55%;
-    --accent-foreground: 60 20% 8%;
+    --accent: 43.3 96.4% 56.3%; /* Yellow */
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 67 25% 25%;
-    --input: 67 25% 20%;
-    --ring: 79 70% 53%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 135.2 59% 49.2%;
 
     /* Custom NoteNest tokens - Dark Theme */
-    --olive: 60 20% 13%;
-    --moss: 67 60% 40%;
-    --lime: 79 70% 53%;
-    --sage: 77 35% 55%;
+    --notenest-green: 135.2 59% 49.2%;
+    --notenest-blue: 217.2 91.2% 59.8%;
+    --notenest-yellow: 43.3 96.4% 56.3%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(79, 70%, 53%) 0%, hsl(67, 60%, 40%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(60, 20% , 8%) 0%, hsl(60, 16%, 12%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(79, 70%, 53%, 0.15) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(160.1, 84.1%, 45%) 0%, hsl(160.1, 84.1%, 35%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(222.2, 84%, 4.9%) 0%, hsl(217.2, 32.6%, 17.5%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(160.1, 84.1%, 39.4%, 0.15) 0%, transparent 70%);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -133,7 +131,7 @@
     @apply inline-flex items-center justify-center gap-2 px-8 py-4 
            bg-primary text-primary-foreground font-semibold rounded-full
            transition-all duration-300 ease-out
-           hover:shadow-[0_0_30px_hsl(79,70%,53%,0.4)] hover:scale-105
+           hover:shadow-[0_0_30px_hsl(160.1,84.1%,39.4%,0.4)] hover:scale-105
            active:scale-95;
   }
 
@@ -157,11 +155,11 @@
   }
 
   .glow {
-    box-shadow: 0 0 60px hsl(79, 70%, 53%, 0.2);
+    box-shadow: 0 0 60px hsl(160.1, 84.1%, 39.4%, 0.2);
   }
 
   .pattern-bg {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2397A126' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310B981' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 }
 
@@ -231,7 +229,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--secondary));
+  background: hsl(var(--accent));
   border-radius: 4px;
 }
 

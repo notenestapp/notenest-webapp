@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
+    "git-push": "git add . && git commit -m \"feat: update landing page\" && git push origin main",
     "test:watch": "vitest"
   },
   "dependencies": {

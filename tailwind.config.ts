@@ -52,10 +52,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        olive: "hsl(var(--olive))",
-        moss: "hsl(var(--moss))",
-        lime: "hsl(var(--lime))",
-        sage: "hsl(var(--sage))",
+        "notenest-green": "hsl(var(--notenest-green))",
+        "notenest-blue": "hsl(var(--notenest-blue))",
+        "notenest-yellow": "hsl(var(--notenest-yellow))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
