@@ -56,8 +56,7 @@ const Privacy = () => {
             <li><strong className="text-foreground">Render PostgreSQL:</strong> For primary database storage and managing custom JWT authentication.</li>
             <li><strong className="text-foreground">AWS S3:</strong> For cloud storage of uploaded files.</li>
             <li><strong className="text-foreground">Google Gemini:</strong> For AI text generation and processing.</li>
-            <li><strong className="text-foreground">Paystack & Flutterwave:</strong> For secure payment processing. NoteNest does not store your raw credit card information.</li>
-            <li><strong className="text-foreground">PostHog:</strong> For product analytics to help us improve the app.</li>
+            <li><strong className="text-foreground">Flutterwave:</strong> For secure payment processing. NoteNest does not store your raw credit card information.</li>
             <li><strong className="text-foreground">Expo Push:</strong> For delivering push notifications to your device.</li>
           </ul>
 
