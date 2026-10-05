@@ -45,7 +45,7 @@ const Privacy = () => {
           </ul>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">4. AI Processing</h2>
-          <p>NoteNest uses advanced AI models (such as Google Gemini and Groq) to provide its core educational features. When you interact with our AI tutor or generate notes, we transmit your chat prompts, note context, and relevant uploaded file content to these third-party AI providers. These conversations are also stored securely in our Appwrite database to maintain chat history.</p>
+          <p>NoteNest uses advanced AI models (such as Google Gemini) to provide its core educational features. When you interact with our AI tutor or generate notes, we transmit your chat prompts, note context, and relevant uploaded file content to these third-party AI providers. These conversations are also stored securely in our PostgreSQL database to maintain chat history.</p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">5. File Uploads</h2>
           <p>Files and images you upload are stored securely in AWS S3 (Amazon Web Services). These files are processed to assist in note generation and AI conversations. We enforce strict size limits to ensure optimal performance.</p>
@@ -53,9 +53,9 @@ const Privacy = () => {
           <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">6. Third-party Services and Data Sharing</h2>
           <p>We share your data only with trusted third-party service providers who assist us in operating our platform:</p>
           <ul className="list-disc pl-6 space-y-2 mt-4">
-            <li><strong className="text-foreground">Appwrite:</strong> For authentication and primary database storage.</li>
+            <li><strong className="text-foreground">Render PostgreSQL:</strong> For primary database storage and managing custom JWT authentication.</li>
             <li><strong className="text-foreground">AWS S3:</strong> For cloud storage of uploaded files.</li>
-            <li><strong className="text-foreground">Google Gemini & Groq:</strong> For AI text generation and processing.</li>
+            <li><strong className="text-foreground">Google Gemini:</strong> For AI text generation and processing.</li>
             <li><strong className="text-foreground">Paystack & Flutterwave:</strong> For secure payment processing. NoteNest does not store your raw credit card information.</li>
             <li><strong className="text-foreground">PostHog:</strong> For product analytics to help us improve the app.</li>
             <li><strong className="text-foreground">Expo Push:</strong> For delivering push notifications to your device.</li>
