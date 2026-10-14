@@ -194,13 +194,14 @@ export default function Index() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a 
-                href="#" 
+                href="https://play.google.com/store/apps/details?id=com.notenest.NoteNest" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-gray-900 font-bold text-base md:text-xl py-3 px-8 md:py-4 md:px-12 rounded-full shadow-[0_6px_0_rgb(209,213,219)] hover:shadow-[0_2px_0_rgb(209,213,219)] hover:translate-y-[4px] transition-all flex items-center justify-center gap-3"
               >
                 <Download className="w-6 h-6" /> Download Android App
               </a>
             </div>
-            <p className="mt-6 text-green-200 font-medium">Coming soon to the Google Play Store!</p>
           </div>
         </section>
       </main>
